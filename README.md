@@ -4,8 +4,8 @@
 
 * [Introduction](#introduction)
 * [Initial setup](#initial-setup)
-* [Exercice 1](#exercice-1)
-* [Exercice 2](#exercice-2)
+* [Exercise 1](#exercise-1)
+* [Exercise 2](#exercise-2)
 * [Conclusions](#conclusions)
 
 ## Introduction
@@ -46,13 +46,13 @@ Select *"Open Sources in Favourites"* and *"Finish"*. You can check the clone op
 
 !["Open Sources in Favourites"](pic/pic0-4.jpg)
 
-You are now all set to do the exercices!
+You are now all set to do the exercises!
 
-## Exercice 1
+## Exercise 1
 
 *TODO!* 
 
-## Exercice 2
+## Exercise 2
 
 *TODO!* 
 
