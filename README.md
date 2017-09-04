@@ -4,8 +4,9 @@
 
 * [Introduction](#introduction)
 * [Initial setup](#initial-setup)
-* [Exercice 1](#exercice-1)
-* [Exercice 2](#exercice-2)
+* [Exercise 1 : JSON-B 1.0 and Bean Validation 2.0](#exercise-1-:-json-b-1.0-and-bean-validation-2.0)
+* [Exercise 2 : Servlet 4 HTTP/2 Push Support](#exercise-2-:-servlet-4-HTTP/2-push-support)
+* [Exercise 3](#exercise-3) 
 * [Conclusions](#conclusions)
 
 ## Introduction
@@ -46,17 +47,22 @@ Select *"Open Sources in Favourites"* and *"Finish"*. You can check the clone op
 
 !["Open Sources in Favourites"](pic/pic0-4.jpg)
 
-You are now all set to do the exercices!
+You are now all set to do the exercises!
 
-## Exercice 1
-
-*TODO!* 
-
-## Exercice 2
+## Exercise 1 : JSON-B 1.0 and Bean Validation 2.0
 
 *TODO!* 
 
-## Conlusions
+## Exercise 2 : Servlet 4 HTTP/2 Push Support
+
+*TODO!* 
+
+## Exercise 3
+
+*TODO!* 
+
+
+## Conclusions
 
 *TODO!* 
 
