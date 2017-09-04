@@ -56,7 +56,7 @@ You are now all set to do the exercises!
 
 *TODO!* 
 
-## Conlusions
+## Conclusions
 
 *TODO!* 
 
