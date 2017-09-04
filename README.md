@@ -24,15 +24,15 @@ The only thing you have to do is to clone the Lab GitHub repository on your mach
 
 In NetBeans, choose "Team", "Git", "Clone..." 
 
-!["Team", "Git", "Clone..."](pic/pic0-2.png)
+!["Team", "Git", "Clone..."](pic/pic0-2.jpg)
 
 and enter the URL of the Lab GitHub repository as below, keep the other default values.
 
-!["Team", "Git", "Clone..."](pic/pic0-3.png)
+!["Team", "Git", "Clone..."](pic/pic0-3.jpg)
 
 Click "Open Sources in Favourites" and "Finish" and check the clone operation in the "Output" windows.
 
-![ "Open Sources in Favourites"](pic/pic0-4.png)
+![ "Open Sources in Favourites"](pic/pic0-4.jpg)
 
 ## Exercice 1
 
