@@ -16,7 +16,7 @@
 
 During the following Lab, you will use NetBeans 8.2 and GlassFish 5, the open source Java EE reference implementation. But you should be able to use any Java EE 8 compatible application server and your preferred IDE.
 
-Please note that Java EE 8 requires Java SE 8 or +.
+:bulb: Java EE 8 requires Java SE 8 or above. For JavaOne, we will use the latest JDK 8 release.
 
 In the interest of time, NetBeans 8.2 and GlassFish have been installed and configured.
 
@@ -24,6 +24,9 @@ In the interest of time, NetBeans 8.2 and GlassFish have been installed and conf
 ### Start NetBeans and GlassFish
 
 In NetBeans, select *"Services"* tab, *"Servers"*, right click on the *"GlassFish 5"* instance and *"Start"* it. After a few seconds you should see that GF5 is started in the NB Output window at the bottom. You can also connect to the GF Admin console (http://localhost:4848) to confirm that GF is up and running.
+
+:bulb: If the *"Start"* option is greyed, just wait a few seconds or select 
+*"Refresh"* first.
 
 !["Team", "Git", "Clone..."](pic/pic0-1.jpg)
 
