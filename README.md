@@ -1,5 +1,12 @@
 # Java EE 8 Hands On Lab
 
+## Table of contents
+
+* [Introduction](#introduction)
+* [Initial setup](#initial-setup)
+* [Exercice 1](#exercice-1)
+* [Exercice 2](#exercice-2)
+* [Conclusions](#conclusions)
 
 ## Introduction
 
@@ -16,23 +23,27 @@ In the interest of time, NetBeans 8.2 and GlassFish have been installed and conf
 
 ### Start NetBeans and GlassFish
 
-In NetBeans, right click 
+In NetBeans, select *"Services"* tab, *"Servers"*, right click on the *"GlassFish 5"* instance and *"Start"* it. After a few seconds you should see that GF5 is started in the NB Output window at the bottom. You can also connect to the GF Admin console (http://localhost:4848) to confirm that GF is up and running.
 
-### Clone the Lab repository
+!["Team", "Git", "Clone..."](pic/pic0-1.jpg)
+
+### Clone the Lab GitHub repository
 
 The only thing you have to do is to clone the Lab GitHub repository on your machine.
 
-In NetBeans, choose "Team", "Git", "Clone..." 
+In NetBeans, choose *"Team", "Git", "Clone..." *
 
 !["Team", "Git", "Clone..."](pic/pic0-2.jpg)
 
-and enter the URL of the Lab GitHub repository as below, keep the other default values.
+... and enter the URL (https://github.com/javaee/j1-hol.git) of the Lab GitHub repository to clone as below, keep the other default values.
 
 !["Team", "Git", "Clone..."](pic/pic0-3.jpg)
 
-Click "Open Sources in Favourites" and "Finish" and check the clone operation in the "Output" windows.
+Select *"Open Sources in Favourites"* and *"Finish"*. You can check the clone operation in the "Output" windows, the cloned repository should also appear under the *"Favourites"* tab.
 
-![ "Open Sources in Favourites"](pic/pic0-4.jpg)
+!["Open Sources in Favourites"](pic/pic0-4.jpg)
+
+You are now all set to do the exercices!
 
 ## Exercice 1
 
@@ -42,8 +53,9 @@ Click "Open Sources in Favourites" and "Finish" and check the clone operation in
 
 *TODO!* 
 
+## Conlusions
 
-
+*TODO!* 
 
 
 
