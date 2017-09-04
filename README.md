@@ -61,7 +61,6 @@ You are now all set to do the exercises!
 
 *TODO!* 
 
-
 ## Conclusions
 
 *TODO!* 
