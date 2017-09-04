@@ -4,8 +4,8 @@
 
 * [Introduction](#introduction)
 * [Initial setup](#initial-setup)
-* [Exercise 1 : JSON-B 1.0 and Bean Validation 2.0](#exercise-1-:-json-b-1.0-and-bean-validation-2.0)
-* [Exercise 2 : Servlet 4 HTTP/2 Push Support](#exercise-2-:-servlet-4-HTTP/2-push-support)
+* [Exercise 1 : JSON-B 1.0 and Bean Validation 2.0](#exercise-1--json-b-10-and-bean-validation-20)
+* [Exercise 2 : Servlet 4 HTTP/2 Push Support](#exercise-2--servlet-4-http2-push-support)
 * [Exercise 3](#exercise-3) 
 * [Conclusions](#conclusions)
 
