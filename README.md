@@ -47,6 +47,10 @@ Select *"Open Sources in Favourites"* and *"Finish"*. You can check the clone op
 
 !["Open Sources in Favourites"](pic/pic0-4.jpg)
 
+:bulb: Sometime when you will add code, NetBeans will complain (e.g. some "imports" are missing). Simply click on the yellow bulb on the left side of the code and NetBeans will, most of the time, provides you with suggestions on how to fix the issue.
+
+!["NetBeans trick"](pic/pic0-5.jpg)
+
 You are now all set to do the exercises!
 
 ## Exercise 1 : JSON-B 1.0 and Bean Validation 2.0
