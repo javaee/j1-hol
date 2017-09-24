@@ -9,6 +9,7 @@
 * [Exercise 3 : Servlet 4 and HTTP/2 Support](ex-servlet.md)
 * [Exercise 4 : JAX-RS 2.1 and CDI 2.0]()
 * [Conclusions](#conclusions)
+* [Credits](#Credits)
 
 ## Introduction
 
@@ -59,5 +60,8 @@ You are now all set to do the exercises!
 
 *TODO!* 
 
+## Credits
+
+This Java EE 8 Hands-on-Lab has been developed by [David Delabassee](https://twitter.com/delabassee), [David Heffelfinger](https://twitter.com/ensode) and [Michael Nascimento Santos](https://twitter.com/mr__m) for JavaOne 2017.
 
 
