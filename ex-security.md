@@ -118,7 +118,7 @@ To compile your code, you need to add the Soteria dependency to your pom.xml
 
 Now you can test the application, *david* and *michael* should be able to log in the application while *ed* should be rejected (HTTP Status 403 - Forbidden) as he doesn't have the approrpiate *"foo"* role. This error page is obviously customizable but that is beyond the scope of this exercice.
 
-![403 Forbidden](https://github.com/javaee/j1-hol/blob/master/pic375-1.jpg/pic375-2.jpg?raw=true)
+![403 Forbidden](https://raw.githubusercontent.com/javaee/j1-hol/master/pic/pic375-2.jpg)
 
 :bulb: To avoid caching issue, just start Chrome in Incognito mode each time you want to test authentication.
 
@@ -138,7 +138,7 @@ In the servlet class, remove or comment the *@EmbeddedIdentityStoreDefinition* a
 ```
 NetBeans will complain that some imports are missing, fix those.
 
-![NetBeans helps to fix the imports..."](https://github.com/javaee/j1-hol/blob/master/pic375-1.jpg/pic375-1.jpg?raw=true)
+![NetBeans helps to fix the imports..."](https://raw.githubusercontent.com/javaee/j1-hol/master/pic/pic375-1.jpg)
 
 ```java
  import javax.enterprise.context.ApplicationScoped;
