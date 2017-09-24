@@ -5,8 +5,8 @@
 * [Introduction](#introduction)
 * [Initial setup](#initial-setup)
 * [Exercise 1 : JSON-B 1.0 and Bean Validation 2.0]()
-* [Exercise 2 : Java EE Security API](ex-security) 
-* [Exercise 3 : Servlet 4 HTTP/2 Push Support](ex-servlet4)
+* [Exercise 2 : Java EE Security API](ex-security.md) 
+* [Exercise 3 : Servlet 4 HTTP/2 Push Support]()
 * [Exercise 4 : JAX-RS 2.1 & CDI 2.0]()
 * [Conclusions](#conclusions)
 

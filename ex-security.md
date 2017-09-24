@@ -137,7 +137,7 @@ In the servlet class, remove or comment the *@EmbeddedIdentityStoreDefinition* a
 ```
 NetBeans will complain that some imports are missing, fix those.
 
-![NetBeans helps to fix the imports..."](pic/pic375-1.jpg)
+![NetBeans helps to fix the imports..."](https://github.com/javaee/j1-hol/blob/master/pic/pic375-1.jpg?raw=true)
 
 ```java
  import javax.enterprise.context.ApplicationScoped;
