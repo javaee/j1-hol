@@ -12,7 +12,7 @@ Chrome will complain by saying that "*Your connection is not private*"; click on
 
 :warning: Chrome complains because GlassFish is using, by default, a self-signed certificate. So while the connection between the browser and GlassFish is crypted (TLS), it can't be trusted. In your application, you should use a certifacate that you can get from a trusted [Certificate Authority](https://en.wikipedia.org/wiki/Certificate_authority). For the sake of this exercise, we can ignore this warning.
 
-Login as *ed/ED*, you should see the 'main screen' and a small blue lightning at the top right corner. This is Chrome HTTP/2 indicator,  blue means that the connection is server over HTTP/2. If you click on it, you will be able to details on the HTTP/2 connection (streams, frames, etc.). This is really all it takes to HTTP/2 enable an exisiting Servlet application, just deploy on a Servlet 4 container! 
+Login as *ed/ED*, you should see the main page of the application and a small blue lightning at the top right corner. This is Chrome HTTP/2 indicator; *blue* means that the connection is server over HTTP/2. Clicking on it will show details on the HTTP/2 connection (streams, frames, etc.). This is really all it takes to HTTP/2 enable an exisiting Servlet application, just deploy on a Servlet 4 container! 
 
 ![Chorome HTTP/2 indicator"](https://github.com/javaee/j1-hol/blob/master/pic/picservlet-2.jpg?raw=true)
 
