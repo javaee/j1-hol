@@ -4,9 +4,10 @@
 
 * [Introduction](#introduction)
 * [Initial setup](#initial-setup)
-* [Exercise 1 : JSON-B 1.0 and Bean Validation 2.0](#exercise-1--json-b-10-and-bean-validation-20)
-* [Exercise 2 : Servlet 4 HTTP/2 Push Support](#exercise-2--servlet-4-http2-push-support)
-* [Exercise 3](#exercise-3) 
+* [Exercise 1 : JSON-B 1.0 and Bean Validation 2.0]()
+* [Exercise 2 : Java EE Security API](ex-security) 
+* [Exercise 3 : Servlet 4 HTTP/2 Push Support](ex-servlet4)
+* [Exercise 4 : JAX-RS 2.1 & CDI 2.0]()
 * [Conclusions](#conclusions)
 
 ## Introduction
@@ -53,17 +54,6 @@ Select *"Open Sources in Favourites"* and *"Finish"*. You can check the clone op
 
 You are now all set to do the exercises!
 
-## Exercise 1 : JSON-B 1.0 and Bean Validation 2.0
-
-*TODO!* 
-
-## Exercise 2 : Servlet 4 HTTP/2 Push Support
-
-*TODO!* 
-
-## Exercise 3
-
-*TODO!* 
 
 ## Conclusions
 
