@@ -129,7 +129,7 @@ To illustrate the concepts, we have used an *EmbeddedIdentityStore* which, by de
 
 The Java EE Security API can be extended. In this exercise, we will evolve our application to use a custom [IndentityStore](https://javaee.github.io/javaee-spec/javadocs/javax/security/enterprise/identitystore/IdentityStore.html) instead of the *EmbeddedIdentityStore*. In the interest of time, the [IndentityStore](https://javaee.github.io/javaee-spec/javadocs/javax/security/enterprise/identitystore/IdentityStore.html) we will focus on how to validate a user and not how to retreive his/her details from a secure store. 
 
-In the servlet class, remove or comment the *@EmbeddedIdentityStoreDefinition* annotation. Now create a java class named **TestIdentityStore.java**. As this class will implement an IndentiyStore, it has to iplments the [IndentityStore](https://javaee.github.io/javaee-spec/javadocs/javax/security/enterprise/identitystore/IdentityStore.html) interface. Also make sure the class has the *Application* scope by annotating it with [@ApplicationScoped](https://javaee.github.io/javaee-spec/javadocs/javax/enterprise/context/ApplicationScoped.html) as below.
+In the servlet class, remove or comment the *@EmbeddedIdentityStoreDefinition* annotation. Now create a java class named **TestIdentityStore.java**. As this class will implement an IndentiyStore, it has to implement the [IndentityStore](https://javaee.github.io/javaee-spec/javadocs/javax/security/enterprise/identitystore/IdentityStore.html) interface. Also make sure the class has the *Application* scope by annotating it with [@ApplicationScoped](https://javaee.github.io/javaee-spec/javadocs/javax/enterprise/context/ApplicationScoped.html) as below.
 
 ```java
  @ApplicationScoped
