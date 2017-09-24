@@ -116,7 +116,7 @@ To compile your code, you need to add the Soteria dependency to your pom.xml
  </dependency>
 ```
 
-Now you can test the application, *david* and *michael* should be able to log in the application while *ed* should be rejected (HTTP Status 403 - Forbidden) as he doesn't have the approrpiate *"foo"* role. This error page is obviously customizable but that is beyond the scope of this exercice.
+Now you can test the application, *david* and *michael* should be able to log in the application while *ed* should be rejected (HTTP Status 403 - Forbidden) as he doesn't have the approrpiate *"foo"* role. This error page is obviously customizable but that is beyond the scope of this exercise.
 
 ![403 Forbidden](https://raw.githubusercontent.com/javaee/j1-hol/master/pic/pic375-2.jpg)
 
@@ -145,7 +145,7 @@ NetBeans will complain that some imports are missing, fix those.
  import javax.security.enterprise.identitystore.IdentityStore;
 ```
 
-We need to implement the [validate](https://javaee.github.io/javaee-spec/javadocs/javax/security/enterprise/identitystore/IdentityStore.html#validate-javax.security.enterprise.credential.Credential-) method. This method will receive a [credential](https://javaee.github.io/javaee-spec/javadocs/javax/security/enterprise/credential/Credential.html) object for the user trying to access the application and will validate the user against his/her details stored somewhere. For this exercice, we will simply store those details in an in-memory map, which again is not very secure! In a real application, your custom *IdentityStore* would fetch the user information from a secure store.
+We need to implement the [validate](https://javaee.github.io/javaee-spec/javadocs/javax/security/enterprise/identitystore/IdentityStore.html#validate-javax.security.enterprise.credential.Credential-) method. This method will receive a [credential](https://javaee.github.io/javaee-spec/javadocs/javax/security/enterprise/credential/Credential.html) object for the user trying to access the application and will validate the user against his/her details stored somewhere. For this exercise, we will simply store those details in an in-memory map, which again is not very secure! In a real application, your custom *IdentityStore* would fetch the user information from a secure store.
 
 Add this code to create and populate the map that will hold our users.
 
@@ -160,7 +160,7 @@ Add this code to create and populate the map that will hold our users.
     unsecureStore.put("michael", "MICHAEL");        
  }
 ```
-:bulb:A IdentityStore can store user details, role information or both. In our exercice, we are taking another shortcut as the profile is simply based on the user name; i.e. the default profile is *"foo"* unless the user name contains *"a"*, in this case her/his profile is *"bar"*.
+:bulb:A IdentityStore can store user details, role information or both. In our exercise, we are taking another shortcut as the profile is simply based on the user name; i.e. the default profile is *"foo"* unless the user name contains *"a"*, in this case her/his profile is *"bar"*.
 
 
 Implement the [validate](https://javaee.github.io/javaee-spec/javadocs/javax/security/enterprise/identitystore/CredentialValidationResult.html) method as follow.
@@ -172,7 +172,7 @@ Implement the [validate](https://javaee.github.io/javaee-spec/javadocs/javax/sec
     String caller = usernamePasswordCredential.getCaller();
     String pwd = usernamePasswordCredential.getPasswordAsString();        
 
-    // just for the exercice, assign the role based on the user name
+    // just for the exercise, assign the role based on the user name
     String role = "foo";
     if ( caller.contains("a") ) {
        role = "bar";
