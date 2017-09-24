@@ -69,7 +69,7 @@ We now have a simple CDI enabled Servlet 4.0 basic application that we will secu
 
 In a pre Java EE 8 application, we would have to rely on application servers specific feature to configure this (ex. XML file, Admin Console, etc). In Java EE 8, it is simple and portable as the Java EE Security API introduces annotations to cope with different authentications mechanisms: [@BasicAuthenticationMechanismDefinition](https://javaee.github.io/javaee-spec/javadocs/javax/security/enterprise/authentication/mechanism/http/BasicAuthenticationMechanismDefinition.html), [@FormAuthenticationMechanismDefinition](https://javaee.github.io/javaee-spec/javadocs/javax/security/enterprise/authentication/mechanism/http/FormAuthenticationMechanismDefinition.html), [CustomFormAuthenticationMechanismDefinition](https://javaee.github.io/javaee-spec/javadocs/javax/security/enterprise/authentication/mechanism/http/CustomFormAuthenticationMechanismDefinition.html).
 
-In the servlet class source, you shoudl have the following annotation 
+In the servlet class source, you should have the following annotation 
 
 ```java
  @WebServlet(name = "NewServlet", urlPatterns = {"/test"})
