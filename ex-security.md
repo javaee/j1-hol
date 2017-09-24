@@ -102,7 +102,7 @@ You can now add the following annotations:
 
 :arrow_right: This annotation is used to specify which IdentityStore to use, in this case, we will use the Embedded Identity Store which require to directly specify our users. 
 
-:warning: In the interrest of time, we will take a shortcut and use the most basic IdentityStore to store our users: EmbeddedIdentityStore. This identity store allows you to store users details (username, password and groups) in your code in clear! *This is highly unsecure and not something you should do for any applications:bangbang:*
+:warning: In the interest of time, we will take a shortcut and use the most basic IdentityStore to store our users: EmbeddedIdentityStore. This identity store allows you to store users details (username, password and groups) in your code in clear! *This is highly unsecure and not something you should do for any applications:bangbang:*
 Since EmbeddedIdentityStore is unsecure it was decided to not include it in the specification. Technically, the EmbeddedIdentityStore is provided by Soteria, the JSR 375 Reference Implementation so it is also available as part of GlassFish 5.
 
 To compile your code, you need to add the Soteria dependency to your pom.xml 
