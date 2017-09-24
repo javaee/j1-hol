@@ -1,4 +1,4 @@
-# Java EE Security API exercice
+# Java EE Security API exercise
 
 ## Initial setup
 
