@@ -2,13 +2,17 @@
 
 ## Table of contents
 
+* [Introduction](#introduction)
 * [Initial setup](#initial-setup)
-* [Exercise 1 : JSON-B 1.0 and Bean Validation 2.0]() **DavidH**
-* [Exercise 2 : Java EE Security API](ex-security.md) **DavidD**
-* [Exercise 3 : Servlet 4 HTTP/2 Push Support]() **DavidD**
-* [Exercise 4 : JAX-RS 2.1 and CDI 2.0]() **Michael**
+* [Exercise 1 : JSON-B 1.0 and Bean Validation 2.0]()
+* [Exercise 2 : Java EE Security API](ex-security.md) 
+* [Exercise 3 : Servlet 4 and HTTP/2 Support]()
+* [Exercise 4 : JAX-RS 2.1 and CDI 2.0]()
 * [Conclusions](#conclusions)
 
+## Introduction
+
+*TODO!* 
 
 ## Initial setup
 
