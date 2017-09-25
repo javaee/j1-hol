@@ -26,6 +26,7 @@ Select the project's *pom.xml*, under *"Project Files"*. Now you can update the 
 Right click on the project, select *"New"* and *"Java Cless"*, enter an appropriate class name, eg. *"JsonBBeanValPracticeService"*. Make sure to specify a package where you code will reside, eg. *"org.j1hol"* then *"finish"*.  
 
 Annotate your class with the `@Path` annotation, specifying an appropriate path for our web service, eg. `@Path("jsonbbeanval")`.
+
 :bulb: Add all missing imports by hitting `CTRL+SHIFT+I`.
 
 NetBeans will warn that REST is not configured, click on the class name and hit `Alt+Enter`, then select "Configure REST using Java EE 6 Specification".

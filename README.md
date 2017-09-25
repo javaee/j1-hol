@@ -37,7 +37,7 @@ In NetBeans, select *"Services"* tab, *"Servers"*, right click on the *"GlassFis
 
 The only thing you have to do is to clone the Lab GitHub repository on your machine.
 
-In NetBeans, choose *"Team", "Git", "Clone..." *
+In NetBeans, choose *"Team", "Git", "Clone..."*
 
 !["Team", "Git", "Clone..."](pic/pic0-2.jpg)
 
