@@ -1,4 +1,4 @@
-package com.example.jaxrs21example.config;
+package com.example.jsonbbeanvaldemo.config;
 
 import java.util.Set;
 import javax.ws.rs.core.Application;
@@ -20,7 +20,7 @@ public class ApplicationConfig extends Application {
      * If required, comment out calling this method in getClasses().
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
-        resources.add(com.example.jaxrs21example.service.CustomerControllerService.class);
+        resources.add(com.example.jsonbbeanvaldemo.service.CustomerControllerService.class);
     }
     
 }

@@ -1,4 +1,4 @@
-package com.example.jaxrs21example.dto;
+package com.example.jsonbbeanvaldemo.dto;
 
 import java.time.LocalDate;
 import javax.validation.constraints.NotBlank;

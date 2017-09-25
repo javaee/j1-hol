@@ -1,6 +1,6 @@
-package com.example.jaxrs21example.service;
+package com.example.jsonbbeanvaldemo.service;
 
-import com.example.jaxrs21example.dto.Customer;
+import com.example.jsonbbeanvaldemo.dto.Customer;
 import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
