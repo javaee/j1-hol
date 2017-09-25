@@ -23,7 +23,7 @@ Select the project's *pom.xml*, under *"Project Files"*. Now you can update the 
 
 ## Create a JAX-RS Web service
 
-Right click on the project, select *"New"* and *"Java Cless"*, enter an appropriate class name, eg. *"JsonBBeanValPracticeService"*. Make sure to specify a package where you code will reside, eg. *"org.j1hol"* then *"finish"*.  
+Right click on the project, select *"New"* and *"Java Class"*, enter an appropriate class name, eg. *"JsonBBeanValPracticeService"*. Make sure to specify a package where you code will reside, eg. *"org.j1hol"* then *"finish"*.  
 
 Annotate your class with the `@Path` annotation, specifying an appropriate path for our web service, eg. `@Path("jsonbbeanval")`.
 
@@ -47,3 +47,80 @@ At this point your method should look like this:
     public Response getJson() {
     }
 ```
+Add a `Customer` class to your project (Right click on the project, select *"New"* | "*Java Class*"). This class will be used as a Data Transfer Object (DTO), its contents should look as follows (copy/paste into your class):
+
+```java
+    package org.j1hol;
+
+    import javax.validation.constraints.NotBlank;
+    import javax.validation.constraints.PositiveOrZero;
+
+    public class Customer {
+
+        private String salutation;
+
+        @NotBlank(message = "first name must not be empty")
+        private String firstName;
+        private String middleName;
+
+        @NotBlank(message = "last name must not be empty")
+        private String lastName;
+
+        @PositiveOrZero
+        private Integer age;
+
+        public Customer() {
+        }
+
+        public Customer(String salutation, String firstName, String middleName, String lastName, Integer age) {
+            this.salutation = salutation;
+            this.firstName = firstName;
+            this.middleName = middleName;
+            this.lastName = lastName;
+            this.age = age;
+        }
+
+        public String getSalutation() {
+            return salutation;
+        }
+
+        public void setSalutation(String salutation) {
+            this.salutation = salutation;
+        }
+
+        public String getFirstName() {
+            return firstName;
+        }
+
+        public void setFirstName(String firstName) {
+            this.firstName = firstName;
+        }
+
+        public String getMiddleName() {
+            return middleName;
+        }
+
+        public void setMiddleName(String middleName) {
+            this.middleName = middleName;
+        }
+
+        public String getLastName() {
+            return lastName;
+        }
+
+        public void setLastName(String lastName) {
+            this.lastName = lastName;
+        }
+
+        public Integer getAge() {
+            return age;
+        }
+
+        public void setAge(Integer age) {
+            this.age = age;
+        }
+
+    }
+```
+
+Add a private variable of type `List` to your class, using generics, specify that the list will accept only insances 
