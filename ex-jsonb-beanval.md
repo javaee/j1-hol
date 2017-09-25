@@ -19,6 +19,23 @@ Select the project's *pom.xml*, under *"Project Files"*. Now you can update the 
  </dependency>
 ```
 
+Additionally, set up the project to use Java 8
+
+```xml
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.1</version>
+    <configuration>
+        <source>1.8</source>
+        <target>1.8</target>
+        <compilerArguments>
+            <endorseddirs>${endorsed.dir}</endorseddirs>
+        </compilerArguments>
+    </configuration>
+</plugin>
+```
+
 :bulb: This Lab is only using APIs from the Java EE 8 Profile which is a subset of the Full platform.
 
 ## Create a JAX-RS Web service
@@ -122,5 +139,9 @@ Add a `Customer` class to your project (Right click on the project, select *"New
 
     }
 ```
+:bulb: Notice the Bean Validation annotations on the class.
 
-Add a private variable of type `List` to your class, using generics, specify that the list will accept only insances 
+Add a private variable of type `List` to your web service class (`JsonBBeanValPracticeService`), using generics, specify that the list will accept only instances of the `Customer` class we just created, annotate the type of the parameterized type with Bean Validation's `@Valid` annotation.
+
+```java
+```
