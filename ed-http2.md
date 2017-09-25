@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The main feature of the Servlet 4.0 API is to provide HTTP/2 support. In this exerice, we will see what it takes to HTTP/2 enbale the simple Web application that we have developed in the previous exercice.
+The main feature of the Servlet 4.0 API is to provide HTTP/2 support. In this exerice, we will see what it takes to HTTP/2 enbale the simple Web application that we have developed in the previous exercise.
 
 Check the URL of the application, it connects in clear (i.e. using http) to the port 8080. Now adjust the url to use *https* instead of *http* and to connect to port *8181* instead of port *8080* and connect to that updated URL.
 
