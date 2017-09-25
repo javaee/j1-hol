@@ -144,4 +144,81 @@ Add a `Customer` class to your project (Right click on the project, select *"New
 Add a private variable of type `List` to your web service class (`JsonBBeanValPracticeService`), using generics, specify that the list will accept only instances of the `Customer` class we just created, annotate the type of the parameterized type with Bean Validation's `@Valid` annotation.
 
 ```java
+private List<@Valid Customer> customerList;
+```
+
+Add a private method to populate the List of customers, as follows:
+
+```java
+private void populateCustomerList() {
+    customerList = new ArrayList<>();
+
+    customerList.add(new Customer("Mrs", "Trisha", null, "Gee", 20));
+    customerList.add(new Customer("Dr", "James", null, "Gosling", 30));
+    customerList.add(new Customer("Mr", "Don", null, "Smith", -10));
+}
+
+```
+
+:bulb: Notice the third element on the list has an invalid age, which should trigger a validation error.
+
+Add an invocation to the `populateCustomerList()` method to the `getJson()` method.
+
+```java
+@GET
+@Produces(MediaType.APPLICATION_JSON)
+public Response getJson() {
+    populateCustomerList();
+}
+```
+
+Inject an instance of `javax.validation.Validator` to your web service class.
+
+```java
+@Inject
+private Validator validator;
+```
+
+:bulb: NetBeans will warn about an unsatisfied injection point, this warning can be safely ignored.
+
+Add a local variable of type `javax.ws.rs.core.Response` to your `getJson()` method.
+
+```java
+Response response;
+```
+
+Add code to validate all elements on the list by invoking the `validate()` method on the injected `Validator`.
+
+```java
+Set<ConstraintViolation<List<Customer>>> constraintViolations = validator.validate(customerList);
+```
+Check to see if there are any constraint violations, if so, iterate through them and send the corresponding error messages to the GlassFish log, then set the value of the Response variable so that it indicates a server error.
+
+```java
+if (!constraintViolations.isEmpty()) {
+    constraintViolations.forEach(
+            constraintViolation -> System.out.println(constraintViolation.getMessage()));
+
+    response = Response.serverError().build();
+} 
+```
+
+Add a local variable of type `javax.json.bind.Jsonb` to the `getJson()` method, initialize it by invoking the `create()` method on `javax.json.bind.JsonbBuilder`.
+
+```java
+Jsonb jsonb = JsonbBuilder.create();
+```
+
+If there are no constraint violations, add an `else` statement to the conditional above, inside it, build a JSON string from the Customer list using the JSON-B API, then build a "success" response that sends the generated JSON string to the client.
+
+```java
+else {
+    String json = jsonb.toJson(customerList);
+    response = Response.ok(json).build();
+}
+```
+Return your `Response` variable from your `getJson()` method.
+
+```java
+return response;
 ```
