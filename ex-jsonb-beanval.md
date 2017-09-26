@@ -234,3 +234,53 @@ Test your web service by expanding *"RESTful Web Services | JsonBBeanValPractice
 ![Test resource](pic/pic-jsonb-beanval-test-resource.jpg)
 
 Did you get the result you were expecting? Why or why not?
+
+One "gotcha" of validating collections using Bean Validation is tht they can't be validated directly, they need to be a property of a bean in order to be validated, therefore, we have a a bit more work before our customer list can be validated properly.
+
+Create a class called `CustomerContainer`, this class should have a single property of type `List<@Valid Customer>`.
+
+```java
+package org.j1hol;
+
+import java.util.List;
+import javax.validation.Valid;
+
+public class CustomerContainer {
+
+    private List<@Valid Customer> customerList;
+
+    public List<Customer> getCustomerList() {
+        return customerList;
+    }
+
+    public void setCustomerList(List<Customer> customerList) {
+        this.customerList = customerList;
+    }
+
+}
+```
+
+Create an instance of `CustomerContainer` in the `getJson()` method of your web service class, then set the `customerList` property of `CustomerContainer` to the list of customers in the web service class.
+
+```java
+CustomerContainer customerContainer = new CustomerContainer();
+customerContainer.setCustomerList(customerList);
+```
+
+Modify the call to validator.validate() so that it validates `CustomerContainer`.
+
+i.e change this line:
+
+```java
+Set<ConstraintViolation<List<Customer>>> constraintViolations = validator.validate(customerList);
+```
+
+to
+
+```java
+Set<ConstraintViolation<CustomerContainer>> constraintViolations = validator.validate(customerContainer);
+```
+
+Verify that validation now fails.
+
+Change the age of the third element on the list to a positive number, test your web service and verify that validation passes.
