@@ -100,11 +100,9 @@ Select *"Open Sources in Favourites"* and *"Finish"*. You can check the clone op
 
 !["NetBeans trick"](pic/pic0-5.jpg)
 
-You are now all set to do the exercises!
+You are now all set to do the [first exercise](ex-jsonb-beanval.md)!
 
 
 ## Credits
 
-This Java EE 8 Hands-on-Lab has been developed by [David Delabassee](https://twitter.com/delabassee), [David Heffelfinger](https://twitter.com/ensode) and [Michael Nascimento Santos](https://twitter.com/mr__m) for JavaOne 2017.
-
-
+This Java EE 8 Hands-on-Lab has been developed by [David Delabassee](https://twitter.com/delabassee) (Java EE Evangelist, Oracle), [David Heffelfinger](https://twitter.com/ensode) (Principal Consultant, Ensode Technology, LLC) and [Michael Nascimento Santos](https://twitter.com/mr__m) (CEO, Improving) for JavaOne 2017.
