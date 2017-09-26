@@ -29,16 +29,16 @@ If you don't have a recent JDK 8 installed on your laptop, download and install 
 
 ### Install GlassFish
 
-Download the [final version of GlassFish 5.0](http://download.oracle.com/glassfish/5.0/release/glassfish-5.0.zip). To install it, just unzip the archive into a target directory. Take a moment to note the directory where GlassFish 5 is installed as it will be required in the next step.
+Download the [final version of GlassFish 5.0](http://download.oracle.com/glassfish/5.0/release/glassfish-5.0.zip). To install it, just unzip the archive into a target directory. Take a moment to note the directory where GlassFish 5 is installed as this path will be required in the next step.
 
 You can now start GlassFish 5...
-```shell
+```
 cd glassfish5
 bin/asadmin start-domain domain1
 ```
 
 After a few seconds, you should see the following...
-```shell
+```
 Waiting for domain1 to start ......
 Successfully started the domain : domain1
 domain  Location: /Users/davidd/work/glassfish5/glassfish/domains/domain1
@@ -47,23 +47,25 @@ Admin Port: 4848
 Command start-domain executed successfully.
 ```
 
-You can now connect to the GlassFish Admin Console on [http://localhost:4848](http://localhost:4848) to confirm that everything works.
+You can now connect to the GlassFish Admin Console on [http://localhost:4848](http://localhost:4848).
 
 ### Install and configure NetBeans
 
-If you have NetBeans 8.2 with Java EE support already installed on your machine, you can go directly to the configuration step.
+If you have NetBeans 8.2 with Java EE support already installed on your machine, you can go directly to the NetBeans configuration step.
 
 ### Install NetBeans
 
-[Download NetBeans 8.2](https://netbeans.org/downloads/), make sure to to download the *"Java EE"* bundle (*"All"* will also work). You can now install and launch NetBeans.
+Download [NetBeans 8.2](https://netbeans.org/downloads/), make sure to download the *"Java EE"* bundle (*"All"* will also work). You can now install and launch NetBeans.
 
 !["Download NetBeans"](pic/pic0-nb.jpg)
 
-### Cnfigure NetBeans
+### Configure NetBeans
 
 NetBeans 8.2 comes with GlassFish 4.x (Java EE 7), we will now reconfigure NetBeans to use GlassFish 5 (Java EE 8) instead.
 
 In NetBeans, select *"Services"* tab, *"Servers"* and right click to select *"Add Server..."*; this will open an *"Add Server Instance"* window. Name your instance, ex. *"GlassFish 5"* and click *Next*. Now in the install location, enter the directory where you have installed GlassFish 5 (see previous step). If everything goes well, NetBeans will confirm that a GlassFish 5.0 installation was found, you can now click *"Next"* and *"Finish"* to accept the default values.
+
+!["Download NetBeans"](pic/pic0-nbgf.jpg)
 
 You should now see your *"GlassFish 5"* instance under *"Servers"*. Right click on it, you can now *"Start"* it if it is not started yet. After a few seconds you should see that GF5 is started in the NetBeans Output window at the bottom. 
 
