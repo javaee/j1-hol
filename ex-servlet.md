@@ -16,3 +16,5 @@ Login as *ed/ED*, you should see the main page of the application and a small bl
 
 ![Chorome HTTP/2 indicator"](https://github.com/javaee/j1-hol/blob/master/pic/picservlet-2.jpg?raw=true)
 
+## Back to the [Exercices list](https://github.com/javaee/j1-hol#java-ee-8-hands-on-lab).
+
