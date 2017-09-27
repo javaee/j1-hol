@@ -74,10 +74,13 @@ You can also connect to the GF Admin console ([http://localhost:4848](http://loc
 :bulb: If the *"Start"* option is greyed, just wait a few seconds or select 
 *"Refresh"* first.
 
-!["Team", "Git", "Clone..."](pic/pic0-1.jpg)
-
+!["Start GF"](pic/pic0-1.jpg)
 
 :bulb: When running a project, NetBeans will ask you which server you want to deploy this project on; make sure to always select *"GlassFish 5"* or set it as the default server.
+
+:bulb: GlassFish comes with a bundled database (Java DB aka Derby). Given that we are not using it, you can disable it to save a few cycles. Just right click on your GlassFish 5 instance, select *"Properties"* and make sure to disable the *"Start Registered Derby Server"* option. For our tests, it is also preferable to disable the *"Preserve Sessions Across Redeployment"* feature.
+
+!["Configure GF"](pic/pic0-nbgfConfig.jpg)
 
 
 ### Clone the Lab GitHub repository
