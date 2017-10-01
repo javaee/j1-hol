@@ -29,7 +29,7 @@ public class PatientHealthInfoResource {
 
     @GET
     @Produces(MediaType.SERVER_SENT_EVENTS)
-    public void register(@Context SseEventSink eventSink, @Context Sse sse) {
+    public void register(@Context SseEventSink eventSink) {
         broadcaster.register(eventSink);
     }
 
