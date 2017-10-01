@@ -19,7 +19,7 @@ public class PatientHealthInfoEmitter {
             "Delabassee");
 
     @Inject
-    private Event<PatientHealthInfo> info;
+    private Event<PatientHealthInfo> event;
 
     // Don't do this at home; injecting a proper SES would require an EAR due to
     // JSR-236 not being part of the web profile
@@ -35,7 +35,7 @@ public class PatientHealthInfoEmitter {
     void collectPatientsHealthInfo() {
         IntStream.range(0, patients.size())
                 .mapToObj(this::patientHealthInfo)
-                .forEach(info::fireAsync);
+                .forEach(event::fireAsync);
     }
 
     private PatientHealthInfo patientHealthInfo(int index) {
