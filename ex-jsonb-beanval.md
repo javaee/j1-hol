@@ -285,4 +285,4 @@ Verify that validation now fails.
 
 Change the age of the third element on the list to a positive number, test your web service and verify that validation passes.
 
-### Back to the [Exercices list](https://github.com/javaee/j1-hol#java-ee-8-hands-on-lab).
+### Back to the [Exercises list](https://github.com/javaee/j1-hol#java-ee-8-hands-on-lab).
