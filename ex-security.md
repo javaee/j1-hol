@@ -1,14 +1,14 @@
-# Java EE Security API exercise
+# Jakarta EE Security API exercise
 
 ## Initial setup
 
-In this exercise, we will use the new [Java EE Security API (JSR 375)](https://jcp.org/aboutJava/communityprocess/final/jsr375/index.html) to secure a Web application.
+In this exercise, we will use the new [Jakarta EE Security API (JSR 375)](https://jcp.org/aboutJava/communityprocess/final/jsr375/index.html) to secure a Web application.
 
 Start a new Maven project and select *"Web Application"* and give it a meaningful name, ex. *"hol-security"*, click *"Next"*.
 
 Select *"GlassFish"* as the application server and *"Java EE7 Web"*, we will update the Java EE API version later. Validate and you should now have an empty project.
 
-Select the project's *pom.xml*, under *"Project Files"*. Now you can update the project to use Java EE 8 APIs but just updating the version number of the *<javaee-web-api>* dependency.
+Select the project's *pom.xml*, under *"Project Files"*. Now you can update the project to use Jakarta EE / Java EE 8 APIs but just updating the version number of the *<javaee-web-api>* dependency.
 
 ```xml
  <dependency>
@@ -19,12 +19,12 @@ Select the project's *pom.xml*, under *"Project Files"*. Now you can update the 
  </dependency>
 ```
 
-:bulb: This Lab is only using APIs from the Java EE 8 Profile which is a subset of the Full platform.
+:bulb: This Lab is only using APIs from the Jakarta EE 8 Web Profile which is a subset of the Full platform.
 
 
 ## Create the Web application
 
-We will now create a Servlet-based Web application that we will then secure using the new Java EE Security API.
+We will now create a Servlet-based Web application that we will then secure using the new Jakarta EE Security API.
 
 Right click on the project, select *"new"* and *"servlet"*.
 Make sure to specify a package where you code will reside, eg. *"org.j1hol"* and click *"next"* then *"finish"*.
@@ -48,7 +48,7 @@ Update it as follow
         out.println("<!DOCTYPE html><html><body>");
         out.println("<div style=\"font-size:150%;font-weight:100;font-family: sans-serif;"); 
         out.println("text-align: center;color: DimGray;margin-top: 40vh;line-height: 150%\">");
-        out.println("Java EE 8 HoL<br/>");
+        out.println("Jakarta EE 8 HoL<br/>");
         out.println(request.getAuthType());
         out.println("</div></body></html>");                     
     }
@@ -57,17 +57,17 @@ Update it as follow
 
 Now right click and select *"Run File"*. This action will compile and deploy our Web Application to GlassFish 5, NetBeans will then launch the browser to test it.
 
-If it works, you will simply see the text produced by the processRequest method "Java EE HoL". 
+If it works, you will simply see the text produced by the processRequest method "Jakarta EE HoL". 
 
 :bulb: When testing your application, always make sure to connect to the servlet and not to the *index.html* that NetBeans also creates!
 
 ## Secure the Web application
 
-We now have a simple CDI enabled Servlet 4.0 basic application that we will secure using the Java EE Security API.
+We now have a simple CDI enabled Servlet 4.0 basic application that we will secure using the Jakarta EE Security API.
 
 :warning: To demonstrate the concept, we will use [Basic Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication), a simple mechanism where the browser sends the user name and the password as unencrypted base64 encoded text to the server. This is **clearly not a secure approach and it shouldn't be used for any serious application:bangbang:**
 
-In a pre Java EE 8 application, we would have to rely on application servers specific feature to configure this (ex. XML file, Admin Console, etc). In Java EE 8, it is simple and portable as the Java EE Security API introduces annotations to cope with different authentications mechanisms: [@BasicAuthenticationMechanismDefinition](https://javaee.github.io/javaee-spec/javadocs/javax/security/enterprise/authentication/mechanism/http/BasicAuthenticationMechanismDefinition.html), [@FormAuthenticationMechanismDefinition](https://javaee.github.io/javaee-spec/javadocs/javax/security/enterprise/authentication/mechanism/http/FormAuthenticationMechanismDefinition.html), [CustomFormAuthenticationMechanismDefinition](https://javaee.github.io/javaee-spec/javadocs/javax/security/enterprise/authentication/mechanism/http/CustomFormAuthenticationMechanismDefinition.html).
+In a pre Jakarta EE application, we would have to rely on application servers specific feature to configure this (ex. XML file, Admin Console, etc). In Jakarta EE, it is simple and portable as the Jakarta EE Security API introduces annotations to cope with different authentications mechanisms: [@BasicAuthenticationMechanismDefinition](https://javaee.github.io/javaee-spec/javadocs/javax/security/enterprise/authentication/mechanism/http/BasicAuthenticationMechanismDefinition.html), [@FormAuthenticationMechanismDefinition](https://javaee.github.io/javaee-spec/javadocs/javax/security/enterprise/authentication/mechanism/http/FormAuthenticationMechanismDefinition.html), [CustomFormAuthenticationMechanismDefinition](https://javaee.github.io/javaee-spec/javadocs/javax/security/enterprise/authentication/mechanism/http/CustomFormAuthenticationMechanismDefinition.html).
 
 In the servlet class source, you should have the following annotation 
 
