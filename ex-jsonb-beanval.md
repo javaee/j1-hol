@@ -36,7 +36,7 @@ Additionally, set up the project to use Java 8
 </plugin>
 ```
 
-:bulb: This Lab is only using APIs from the Java EE 8 Profile which is a subset of the Full platform.
+:bulb: This Lab is only using APIs from the Jakarta EE 8 Web Profile which is a subset of the Full platform.
 
 ## Create a JAX-RS Web service
 
