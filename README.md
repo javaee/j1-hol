@@ -1,10 +1,10 @@
-# Java EE 8 Hands On Lab
+# Jakarta EE 8 Hands On Lab
 
 ## Table of contents
 
 * [Initial setup](#initial-setup)
 * [Exercise 1 : JSON-B 1.0 and Bean Validation 2.0](ex-jsonb-beanval.md)
-* [Exercise 2 : Java EE Security API](ex-security.md) 
+* [Exercise 2 : Jakarta EE Security API](ex-security.md) 
 * [Exercise 3 : Servlet 4 and HTTP/2 Support](ex-servlet.md)
 * [Exercise 4 : JAX-RS 2.1 and CDI 2.0]()
 * [Credits](#Credits)
@@ -12,9 +12,7 @@
 
 ## Initial setup
 
-During this "Bring Your Own Laptop" Lab, you will use NetBeans 8.2 and GlassFish 5, the open source Java EE reference implementation to test some of the new Java EE 8 APIs. 
-
-GlassFish 5 is today the only Java EE 8 compatible application server. Over time,  this will change as implementors will add support to Java EE 8 to their application servers. This lab will then also work on those application servers.
+During this "Bring Your Own Laptop" Lab, you will use NetBeans 8.2 and GlassFish 5, the open source Jakarta EE reference implementation to test some Jakarta EE 8 APIs. 
 
 ### Install Java SE 8 JDK
 
@@ -61,7 +59,7 @@ Download [NetBeans 8.2](https://netbeans.org/downloads/), make sure to download 
 
 ### Configure NetBeans
 
-NetBeans 8.2 comes with GlassFish 4.x (Java EE 7), we will now reconfigure NetBeans to use GlassFish 5 (Java EE 8) instead.
+NetBeans 8.2 comes with GlassFish 4.x (Java EE 7), we will now reconfigure NetBeans to use GlassFish 5 (Jakarta EE / Java EE 8) instead.
 
 In NetBeans, select *"Services"* tab, *"Servers"* and right click to select *"Add Server..."*; this will open an *"Add Server Instance"* window. Name your instance, ex. *"GlassFish 5"* and click *Next*. Now in the install location, enter the directory where you have installed GlassFish 5 (see previous step). If everything goes well, NetBeans will confirm that a GlassFish 5.0 installation was found, you can now click *"Next"* and *"Finish"* to accept the default values.
 
@@ -91,7 +89,7 @@ In NetBeans, choose *"Team", "Git", "Clone..."*
 
 !["Team", "Git", "Clone..."](pic/pic0-2.jpg)
 
-... and enter the URL (https://github.com/javaee/j1-hol.git) of the Lab GitHub repository to clone as below, keep the other default values.
+... and enter the URL (https://github.com/dheffelfinger/j1-hol.git) of the Lab GitHub repository to clone as below, keep the other default values.
 
 !["Team", "Git", "Clone..."](pic/pic0-3.jpg)
 
