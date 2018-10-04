@@ -8,7 +8,7 @@ Check the URL of the application, it connects in clear (i.e. using http) to the 
 
 Chrome will complain by saying that "*Your connection is not private*"; click on *ADVANCED* and then on *Procceed to locahost (unsafe)*.
 
-![Your connection is not private](https://github.com/javaee/j1-hol/blob/master/pic/picservlet-1.jpg?raw=true)
+![Your connection is not private](https://github.com/dheffelfinger/j1-hol/blob/master/pic/picservlet-1.jpg?raw=true)
 
 :warning: Chrome complains because GlassFish is using, by default, a self-signed certificate. So while the connection between the browser and GlassFish is encrypted (TLS), it can't be trusted. In your application, you should use a certifacate that you can get from a trusted [Certificate Authority](https://en.wikipedia.org/wiki/Certificate_authority). For the sake of this exercise, we can ignore this warning.
 
