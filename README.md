@@ -106,4 +106,4 @@ You are now all set to do the [first exercise](ex-jsonb-beanval.md)!
 
 ## Credits
 
-This Java EE 8 Hands-on-Lab has been developed by [David Delabassee](https://twitter.com/delabassee) (Java EE Evangelist, Oracle), [David Heffelfinger](https://twitter.com/ensode) (Principal Consultant, Ensode Technology, LLC) and [Michael Nascimento Santos](https://twitter.com/mr__m) (CEO, Improving) for JavaOne 2017.
+This Jakarta EE 8 Hands-on-Lab was originally developed by [David Delabassee](https://twitter.com/delabassee) (Java EE Evangelist, Oracle), [David Heffelfinger](https://twitter.com/ensode) (Principal Consultant, Ensode Technology, LLC) and [Michael Nascimento Santos](https://twitter.com/mr__m) (CEO, Improving) for JavaOne 2017. Updated by David Heffelfinger and [Bob Larsen](https://twitter.com/direHerring) for Oracle Code One 2018.
