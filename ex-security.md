@@ -201,4 +201,4 @@ To learn more about the Security API, you can check at your leisure
 * How to [use the SecurityContext](https://github.com/javaee/security-soteria/tree/master/test/app-securitycontext)
 * [Java EE Security API specification](https://jcp.org/aboutJava/communityprocess/final/jsr375/index.html)
 
-### Back to the [Exercices list](https://github.com/javaee/j1-hol#java-ee-8-hands-on-lab).
+### Back to the [Exercises list](https://github.com/dheffelfinger/j1-hol#java-ee-8-hands-on-lab).
