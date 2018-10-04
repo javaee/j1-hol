@@ -1,4 +1,4 @@
-# Jakarta EE 8 Hands On Lab
+# Jakarta EE 8 Hands-On Lab
 
 ## Table of contents
 
