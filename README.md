@@ -16,11 +16,11 @@ During this "Bring Your Own Laptop" Lab, you will use NetBeans 8.2 and GlassFish
 
 ### Install Java SE 8 JDK
 
-:bulb: Java EE 8 requires Java SE 8 or above. For JavaOne, we will use the latest JDK 8 release.
+:bulb: Jakarta EE requires Java SE 8 or above. For Oracle Code One, we will use the latest JDK 8 release.
 
-:warning: Java EE requires the JDK not just a JRE!
+:warning: Jakarta EE requires the JDK not just a JRE!
 
-:warning: GlassFish 5.0 is today only supported on Java SE 8; do not use Java SE 9! GlassFish 5.0.1 will add support Java SE 9.
+:warning: GlassFish 5.0 is today only supported on Java SE 8; do not use Java SE 9/10/11! GlassFish 5.0.1 will add support Java SE 9.
 
 If you don't have a recent JDK 8 installed on your laptop, download and install [Java SE 8 Development Kit 8u144](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
 
