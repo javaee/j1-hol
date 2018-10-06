@@ -46,7 +46,7 @@
                     <label for="lastName">Last Name</label>
                     <input type="text" maxlength="20" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
                 </div>
-                 <div class="form-group">
+                <div class="form-group">
                     <label for="dateOfBirth">Date of Birth</label>
                     <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth">
                 </div>
@@ -72,7 +72,7 @@
                         crossDomain: true,
                         dataType: "json",
                         type: "POST",
-                        url: "http://localhost:8080/jaxrs21example/webresources/customercontroller/",
+                        url: "http://localhost:8080/jsonbbeanvaldemo/webresources/customercontroller/",
                         data: JSON.stringify(customerObject)
                     }).done(function (data, textStatus, jqXHR) {
                         if (jqXHR.status === 200) {
@@ -99,7 +99,9 @@
 
                 var jsonObject = {};
                 for (var i = 0; i < serializedForm.length; i++) {
-                    jsonObject[serializedForm[i]['name']] = serializedForm[i]['value'];
+                    if (serializedForm[i]['value'] !== '') {
+                        jsonObject[serializedForm[i]['name']] = serializedForm[i]['value'];
+                    }
                 }
                 return jsonObject;
             }
