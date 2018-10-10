@@ -1,7 +1,6 @@
 package com.example.jsonbbeanvaldemo.dto;
 
 import java.time.LocalDate;
-import javax.json.bind.annotation.JsonbNillable;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.PastOrPresent;
 
