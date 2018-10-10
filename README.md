@@ -5,8 +5,7 @@
 * [Initial setup](#initial-setup)
 * [Exercise 1 : JSON-B 1.0 and Bean Validation 2.0](ex-jsonb-beanval.md)
 * [Exercise 2 : Jakarta EE Security API](ex-security.md) 
-* [Exercise 3 : Servlet 4 and HTTP/2 Support](ex-servlet.md)
-* [Exercise 4 : JAX-RS 2.1 and CDI 2.0]()
+* [Exercise 3 : JAX-RS 2.1 and CDI 2.0]()
 * [Credits](#Credits)
 
 
