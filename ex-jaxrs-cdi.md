@@ -54,6 +54,8 @@ Create an instance of `java.util.Random` which can be used to generate "random" 
 private Random randomGen = new Random();
 ```
 
+:bulb: Remember to add all missing imports by hitting `CTRL+SHIFT+I`.
+
 Inject as Event bus which will accept Double Events.
 
 ```java
@@ -61,20 +63,22 @@ Inject as Event bus which will accept Double Events.
 private Event<Double> eventBus;
 ```
 
+:bulb: Remember to add all missing imports by hitting `CTRL+SHIFT+I` and select `javax.enterprise.event.Event`.
+
 Now we'll need to create a method to update the price.  
 
 ```java
-    @Schedule(second = "*", minute = "*", hour = "*")
-    public void updatePrice() {
-        currentPrice += (randomGen.nextDouble() - 0.4) * 5;
-        eventBus.fireAsync(currentPrice).thenAccept((event) -> System.out.println(String.format("$%.2f", event) + " Delivered"));
-        System.out.println(String.format("$%.2f", currentPrice) + " Fired");
-    }
+@Schedule(second = "*", minute = "*", hour = "*")
+public void updatePrice() {
+    currentPrice += (randomGen.nextDouble() - 0.4) * 5;
+    eventBus.fireAsync(currentPrice).thenAccept((event) -> System.out.println(String.format("$%.2f", event) + " Delivered"));
+    System.out.println(String.format("$%.2f", currentPrice) + " Fired");
+}
 ```
 
 This method will update the price, then fire an event containing the new price.  
 
-:bulb: The `@Schedule` annotation will call this method once every second
+:bulb: This `@Schedule` annotation will call this method once every second
 
 :bulb: Notice that when the application is run, the "fired" line is printed before the "delivered" line. 
 
@@ -88,7 +92,7 @@ and make it a stateless session bean by adding an `@Stateless` annotation.
 
 :bulb: Remember to add all missing imports by hitting `CTRL+SHIFT+I`.
 
-NetBeans will warn that REST is not configured, click on the class name and hit `Alt+Enter`, then select "Configure REST using Java EE 6 Specification".
+NetBeans will warn that REST is not configured, click on the class name and hit `Alt+Enter`, then select "Configure REST using Java EE 6 Specification".  
 
 Create an SseBroadcaster instance variable.
 ```java
